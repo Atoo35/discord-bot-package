@@ -1,0 +1,28 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "A simple nodejs boilerplate code to create a discord bot with slash commands and a command handler",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "wsl": ". ./.env && nodemon index.js",
+    "linux": "source ./.env && nodemon index.js"
+  },
+  "keywords": [
+    "discord-bot",
+    "bot",
+    "discord",
+    "nodejs",
+    "slash commands",
+    "command handler"
+  ],
+  "author": "Atharva Despande",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "discord-api-types": "^0.35.0",
+    "discord.js": "^13.8.1",
+    "nodemon": "^2.0.18"
+  }
+}
