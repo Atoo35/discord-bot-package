@@ -4,8 +4,8 @@ const { Routes } = require('discord-api-types/v9');
 const commands = [];
 const deploySlashCommands = async (arrayDir) => {
   const rest = new REST({ version: '9' }).setToken(process.env.BOT_TOKEN);
-  const applicationId = 'YOUR_APPLICATION_ID'
-  const guildId = 'YOUR_GUILD_ID'
+  const applicationId = '762916616760590377'
+  const guildId = '748418058057547856'
   arrayDir.forEach(dir => {
     const commandFiles = fs.readdirSync(`./slashCommands/${dir}`).filter(file => file.endsWith('.js'));
     for (const file of commandFiles) {
