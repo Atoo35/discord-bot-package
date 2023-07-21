@@ -1,3 +1,7 @@
 .env
 node_modules
 pnpm-lock.yaml
+Archive.zip
+transcript.html
+transcript.txt
+.DS_Store

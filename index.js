@@ -1,5 +1,5 @@
 const fs = require('fs')
-const { Client, Collection, GatewayIntentBits, Partials, Events, ChannelType, PermissionFlagsBits } = require('discord.js');
+const { Client, Collection, GatewayIntentBits, Partials, Events, ChannelType, PermissionFlagsBits, ActivityType } = require('discord.js');
 const { getSetupChannels } = require('./common/utils');
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages,
@@ -27,7 +27,7 @@ readSlashCommands([''])
 client.on(Events.ClientReady, async () => {
   var memCount = client.guilds.cache.reduce((x, y) => x + y.memberCount, 0);
   console.log(`Bot has started, with ${memCount} users, in ${client.channels.cache.size} channels of ${client.guilds.cache.size} guilds.`);
-  client.user.setPresence({ activities: [{ name: 'fun in ' + client.guilds.cache.size + ' servers' }], status: 'online' })
+  client.user.setPresence({ activities: [{ name: 'fun in ' + client.guilds.cache.size + ' servers', type: ActivityType.Listening }], status: 'online' })
 })
 
 client.on(Events.MessageReactionAdd, async (reaction, user) => {
