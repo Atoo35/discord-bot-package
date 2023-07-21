@@ -22,7 +22,8 @@
     "@discordjs/builders": "^1.4.0",
     "@discordjs/rest": "^1.4.0",
     "discord-api-types": "^0.37.21",
-    "discord.js": "^14.7.1"
+    "discord.js": "^14.7.1",
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
